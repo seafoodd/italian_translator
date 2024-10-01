@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from colorama import Fore, init
 
+from italian_translator.get_translations import get_translations
 from .show_translations import show_translations
 from .show_examples import show_examples
 
@@ -75,7 +76,15 @@ def main():
     soup = BeautifulSoup(response.content, 'html.parser')
 
     # SHOW DISPLAY TERMS
-    show_translations(soup, sentence)
+    print(f"{Fore.GREEN}Translations for '{sentence}':")
+
+    language = language[:3]
+
+    source = language if reverse else 'ita'
+    target = 'ita' if reverse else language
+
+
+    show_translations(get_translations(sentence, source, target))
 
     # SHOW EXAMPLES
     show_examples(soup, examples)
