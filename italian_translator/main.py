@@ -76,7 +76,6 @@ def main():
     soup = BeautifulSoup(response.content, 'html.parser')
 
     # SHOW DISPLAY TERMS
-    print(f"{Fore.GREEN}Translations for '{sentence}':")
 
     language = language[:3]
 
@@ -84,7 +83,9 @@ def main():
     target = 'ita' if reverse else language
 
 
+    print(f"{Fore.GREEN}Translations for '{sentence}':")
     show_translations(get_translations(sentence, source, target))
+    print()
 
     # SHOW EXAMPLES
     show_examples(soup, examples)
