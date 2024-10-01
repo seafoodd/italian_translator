@@ -28,8 +28,9 @@ ita <sentence>
 
 - `--reverse`, `-R`: Translate from a specified language to Italian.
 - `--language`, `-L`: Specify the language to translate to (default: English).
-- `--examples`, `-E`: Display a specified number of example sentences.
+- `--examples`, `-E`: Display a specified number of example sentences (default: 3).
 - `--help`, `-h`: Display the help message.
+- `--version`, `-v`: Display the package version.
 
 ## Examples
 

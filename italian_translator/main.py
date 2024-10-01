@@ -1,6 +1,6 @@
 import sys
 import urllib.parse
-
+from importlib.metadata import version
 import requests
 from bs4 import BeautifulSoup
 from colorama import Fore, init
@@ -27,6 +27,11 @@ def print_help():
 def main():
     if len(sys.argv) < 2 or sys.argv[1] in ('-h', '--help'):
         print_help()
+        return
+
+    if sys.argv[1] in ('-v', '--version'):
+        ver = version('italian-translator')
+        print(f"italian-translator {ver}")
         return
 
     # PARSE COMMAND LINE ARGUMENTS
