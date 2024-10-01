@@ -21,6 +21,7 @@ def print_help():
         --language, -L      Specify the target language (default is English).
         --examples, -E      Number of examples to display (default is 3).
         --help, -h          Show this help message and exit.
+        --version, -v       Show the version of the package.
     """
     print(help_text)
 

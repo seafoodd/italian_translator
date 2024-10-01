@@ -11,6 +11,13 @@
 
 ## Installation
 
+### Step 1: Download and Install Python
+
+If you don't have Python installed, you can download it from the official website: [python.org](https://www.python.org/downloads/). Follow the instructions for your operating system to install Python.
+
+
+### Step 2: Install the Package
+
 You can install the package using `pip`:
 
 ```sh
@@ -30,26 +37,26 @@ ita <sentence>
 - `--language`, `-L`: Specify the language to translate to (default: English).
 - `--examples`, `-E`: Display a specified number of example sentences (default: 3).
 - `--help`, `-h`: Display the help message.
-- `--version`, `-v`: Display the package version.
+- `--version`, `-v`: Show the version of the package.
 
 ## Examples
 
-Translate an Italian sentence to English:
+#### Translate an Italian sentence to English:
 ```sh
 italian-translator "Ciao, come stai?"
 ita il gatto
 ```
-Translate an English sentence to Italian:
+#### Translate an English sentence to Italian:
 ```sh
 italian-translator --reverse "Hello, how are you?"
 ita -R the cat
 ```
-Translate an Italian sentence to French
+#### Translate an Italian sentence to French
 ```sh
 italian-translator --language french "Ciao, come stai?"
 ita -L french il gatto
 ```
-Display 5 examples sentences:
+#### Display 5 examples sentences:
 ```sh
 italian-translator --examples 5 "Ciao, come stai"
 ita -E 5 il gatto
