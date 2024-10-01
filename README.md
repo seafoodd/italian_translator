@@ -20,7 +20,8 @@ pip install italian-translator
 ## Usage
 
 ```sh
-italian-translator [--reverse|-R] [--language|-L <language>] [--examples|-E <number>] <sentence>
+italian-translator <sentence>
+ita <sentence>
 ```
 
 ## Options
